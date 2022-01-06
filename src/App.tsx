@@ -2,11 +2,14 @@ import React from 'react';
 import { Navigate, Router, Route } from 'react-router-dom'
 import logo from './logo.svg';
 import GlobalStyle from 'style/Global'
+import TopBar from 'layouts/TopBar'
+import Footer from 'layouts/Footer'
 
 function App() {
   return (
     <>
       <GlobalStyle />
+      <TopBar />
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -23,6 +26,7 @@ function App() {
           </a>
         </header>
       </div>
+      <Footer />
     </>
   );
 }
