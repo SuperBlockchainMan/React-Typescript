@@ -3,9 +3,9 @@ import StyledButton from './StyledButton'
 import { ButtonProps, scales, variants } from './types'
 
 const getExternalLinkProps = (): { target: string; rel: string } => ({
-    target: "_blank",
-    rel: "noreferrer noopener",
-  });
+  target: "_blank",
+  rel: "noreferrer noopener",
+});
 
 const Button = <E extends ElementType = "button">(props: ButtonProps<E>): JSX.Element => {
   const { startIcon, endIcon, external, className, isLoading, disabled, children, ...rest } = props;
