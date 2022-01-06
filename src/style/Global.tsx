@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
   .App-logo {
     height: 40vmin;
     pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
   }
   
   .App-header {
